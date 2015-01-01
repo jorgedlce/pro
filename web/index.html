@@ -1,4 +1,9 @@
-
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,12 +12,14 @@
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- esto permite correcta escritura en la web -->
 <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -52,19 +59,50 @@
 
 			});
 		</script>
-		<!-- //Owl Carousel Assets -->
-<!----font-Awesome----->
+
+<!-- probando carusel -->
+<script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jssor_slider1_starter = function (containerId) {
+            //Reference http://www.jssor.com/development/slider-with-slideshow-no-jquery.html
+            //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 3000, $Opacity: 2 }
+            ];
+
+            var options = {
+                $SlideDuration: 1000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 3000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$(containerId, options);
+        }
+    </script>
+<!-- probando carusel -->
+
+<!----font-Awesome--->
    	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!--font-Awesome-->
+
 </head>
 <body>
 <div class="header_bg">
 <div class="container">
 	<div class="row header">
 		<div class="logo navbar-left">
-			<a href="index.html"><img  href="index.html" src="images/logo.png" style="padding-top: 15px" alt="desc"           class=" img-responsive"/> 
+			<a href="index.html"><img  href="index.html" src="images/logo.png" style="padding-top: 15px" alt="desc" class=" img-responsive"/> 
             </a>
-
 		</div>
 		<div class="h_search navbar-right">
 			<form>
@@ -92,6 +130,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="index.html">Inicio</a></li>
+		        <li><a href="nosotros.html">Nosotros</a></li>
 		        <li><a href="technology.html">Technologies</a></li>
 		        <li><a href="about.html">About</a></li>
 		        <li><a href="blog.html">Blog</a></li>
@@ -102,11 +141,11 @@
 		</nav>
 		<div class="soc_icons navbar-right">
 			<ul class="list-unstyled text-center">
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				
+				<li><a href="https://www.facebook.com/matematicocatolicosanjuan"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://plus.google.com/u/0/104980570675992578527/posts"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCCaWoyOtqXqqogED4gAsh6w"><i class="fa fa-youtube-play"></i></a></li>
+				
 			</ul>	
 		</div>
 	</div>
@@ -142,27 +181,27 @@
 		<div class="main row">
 			<div class="col-md-3 images_1_of_4 text-center">
 				<span class="bg"><i class="fa fa-globe"></i></span>
-				<h4><a href="#">Sed Porta Dolor</a></h4>
-				<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 1500s.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<h4><a>Formación Global</a></h4>
+				<p class="para">Formamos a cada estudiante con el fin que ellos puedan tener una percepción global, en la cultura, el arte, la educación, etc.</p>
+				
 			</div>
 			<div class="col-md-3 images_1_of_4 bg1 text-center">
-				<span class="bg"><i class="fa fa-laptop"></i></span>
-				<h4><a href="#">Lorem Ipsum is</a></h4>
-				<p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<span class="bg"><i class="fa fa-user"></i></span>
+				<h4><a>Desarrollo Personal</a></h4>
+				<p class="para">Educamos a cada estudiante para que aprendan el respeto, la responsabilidad, la solidaridad y cada valor. Formando personas de bien que serán el futuro del país.</p>
+				
 			</div>
 			<div class="col-md-3 images_1_of_4 bg1 text-center">
-				<span class="bg"><i class="fa fa-cog"></i></span>
-				<h4><a href="#">Sed Porta Dolor</a></h4>
-				<p class="para">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32  by H. Rackham.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<span class="bg"><i class="fa fa-book"></i></span>
+				<h4><a>Educación</a></h4>
+				<p class="para">Brindamos un excelente nivel educativo, con un compromiso responsable por cada alumno para que se pueda desarrollar intelectualmente.</p>
+				
 			</div>		
 			<div class="col-md-3 images_1_of_4 bg1 text-center">
-				<span class="bg"><i class="fa fa-shield"></i> </span>
-				<h4><a href="#">Contrary  belief</a></h4>
-				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<span class="bg"><i class="fa fa-pencil"></i> </span>
+				<h4><a>Evaluaciones</a></h4>
+				<p class="para">Brindamos una educación teórico-práctico, con una evaluaciones constante en las diferentes materias que enseñamos.</p>
+				
 			</div>	
 		</div>
 	</div>
@@ -170,146 +209,136 @@
 <div class="main_btm"><!-- start main_btm -->
 	<div class="container">
 		<div class="main row">
-			<div class="col-md-6 content_left">
-				<img src="images/pic1.jpg" alt="" class="img-responsive">
+			<div class="col-xs-12 col-md-6 content_left">
+				<!-- carusel -->
+				<div id="slider1_container" style="position: relative; width: 550px; height: 450px;">
+
+        		<!-- Loading Screen -->
+        			
+
+        			<!-- Slides Container -->
+        			<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 550px; height: 450px;
+            		overflow: hidden;">
+            			<div>
+                			<img u=image src="images/a2.jpg" />
+            			</div>
+            			<div>
+                			<img u=image src="images/a3.jpg" />
+            			</div>
+            			<div>
+               				<img u=image src="images/a4.jpg" />
+            			</div>
+            			<div>
+                			<img u=image src="images/a5.jpg" />
+            			</div>
+        			</div>
+        			<a style="display: none" href="http://www.jssor.com">bootstrap slider</a>
+        			<!-- Trigger -->
+        			<script>
+            			jssor_slider1_starter('slider1_container');
+        			</script>
+    			</div>
+
+				<!-- carusel -->
 			</div>
-			<div class="col-md-6 content_right">
-				<h4>Lorem Ipsum is simply <span>dummy text of the ornare  </span> vulputate printing and  There are many variations of passages.</h4>
-				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words. </p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+			<div class="col-xs-12 col-md-6 content_right">
+				<h4>Brindando un Servicio Educativo de Inicial, Primaria y Secundaria e iniciamos  actividades de <span>integración</span> familiar.</h4>
+				<p class="para">En el colegio Matemático Católico San Juan inculcamos una adecuada educación, siempre enseñando a nuestros alumnos el significado los valores.</p>
+				<p class="para">
+ 				Además de desarrollar la parte intelectual y creativa de los alumnos en nuestras diferentes materias y áreas de la institución, siempre comprometiendo la participación de los padres de familia para que cada alumno tenga un desarrollo adecuado y así  llegar a ser personas de bien, siendo el futuro del país.
+ 			    </p>
+				<a href="nosotros.html" class="fa-btn btn-1 btn-1e">Leer más</a>
 			</div>
 		</div>
 				<!----start-img-cursual---->
+					<div><h2>VALORES</h2></div>
 					<div id="owl-demo" class="owl-carousel text-center">
+
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/respeto.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
+								<h4><a>Respeto</a></h4>
 								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+									El respeto consiste en el reconocimiento de los intereses y sentimientos del otro en una relación.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/amistad.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Morbi nunc</a></h4>
+								<h4><a>Amistad</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									La amistad es una relación afectiva que se puede establecer entre dos o más individuos.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/paciencia.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a>Paciencia</a></h4>
 								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+									La paciencia es la actitud que lleva al ser humano a poder soportar contratiempos y dificultades para conseguir algún bien.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/solidaridad.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Sed faucibus</a></h4>
+								<h4><a>Solidaridad</a></h4>
 								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+									Adhesión o apoyo incondicional a causas o intereses ajenos, especialmente en situaciones comprometidas o difíciles.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/amor.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a>Amor</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									Sentimiento de vivo afecto e inclinación hacia una persona o cosa a la que se le desea todo lo bueno.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/honestidad.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a>Honestidad</a></h4>
 								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+									Honestidad es un valor o cualidad propio de los seres humanos que tiene una estrecha relación con los principios de verdad,  justicia y con la integridad moral.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/gratitud.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
+								<h4><a>Gratitud</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									Sentimiento de estima y reconocimiento que una persona tiene hacia quien le ha hecho un favor o prestado un servicio, por el cual desea corresponderle.
 								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
+								<img class="lazyOwl" data-src="images/valores/puntualidad.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a>Puntualidad</a></h4>
 								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
-								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
-								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
-								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Morbi nunc</a></h4>
-								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									Puntualidad es una actitud humana considerada en muchas sociedades como la virtud de coordinarse cronológicamente para cumplir una tarea requerida.
 								</p>
 							</div>
 						</div>
@@ -321,7 +350,7 @@
 	<div class="container">
 		<div class="row  footer">
 			<div class="copy text-center">
-				<p class="link"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+				<p class="link"><span>&#169; Copyright 2014 - Matemático Católico San Juan. Todos los derechos reservados.</span></p>
 			</div>
 		</div>
 	</div>
